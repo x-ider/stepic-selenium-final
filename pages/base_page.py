@@ -46,6 +46,12 @@ class BasePage(object):
         link.click()
         # TODO: to add assert or not to ?
 
+    def go_to_basket_page(self):
+        link = self.browser.find_element(*BasePageLocators.BASKET_BUTTON)
+        link.click()
+        # TODO: to add assert or not to ?
+        # WARNING: can't go to basket from checkout page, so this is not base page method
+
     def should_be_login_link(self):
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Login link is not presented"
 
