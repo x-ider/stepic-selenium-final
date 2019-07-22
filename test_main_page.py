@@ -1,6 +1,6 @@
 from pages.main_page import MainPage
 from pages.login_page import LoginPage
-from pages.basket_page import BasketPage
+from pages.cart_page import CartPage
 
 
 def test_guest_should_see_login_link(browser):
@@ -23,8 +23,8 @@ def test_guest_cant_see_product_in_cart_opened_from_main_page(browser):
     link = "http://selenium1py.pythonanywhere.com"
     page = MainPage(browser, link)
     page.open()
-    page.go_to_basket_page()
-    basket_page = BasketPage(browser, browser.current_url)
-    basket_page.basket_is_empty()
-    basket_page.basket_is_empty_text_exists()
+    page.go_to_cart_page()
+    cart_page = CartPage(browser, browser.current_url)
+    cart_page.cart_is_empty()
+    cart_page.cart_is_empty_text_exists()
 

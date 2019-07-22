@@ -46,11 +46,11 @@ class BasePage(object):
         link.click()
         # TODO: to add assert or not to ?
 
-    def go_to_basket_page(self):
-        link = self.browser.find_element(*BasePageLocators.BASKET_BUTTON)
+    def go_to_cart_page(self):
+        link = self.browser.find_element(*BasePageLocators.CART_BUTTON)
         link.click()
         # TODO: to add assert or not to ?
-        # WARNING: can't go to basket from checkout page, so this is not a base page method
+        # WARNING: can't go to cart from checkout page, so this is not a base page method
 
     def should_be_authorized_user(self):
         assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented," \

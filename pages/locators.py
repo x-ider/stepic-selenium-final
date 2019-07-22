@@ -5,7 +5,7 @@ class BasePageLocators(object):
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
-    BASKET_BUTTON = (By.CSS_SELECTOR, ".header span>a.btn-default.btn")
+    CART_BUTTON = (By.CSS_SELECTOR, ".header span>a.btn-default.btn")
 
 
 class MainPageLocators(object):
@@ -21,13 +21,13 @@ class LoginPageLocators(object):
     REGISTRATION_SUBMIT_BUTTON = (By.CSS_SELECTOR, "[name='registration_submit']")
 
 
-class BasketPageLocators(object):
-    BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
-    EMPTY_BASKET_MESSAGE_ELEMENT = (By.CSS_SELECTOR, "#content_inner p")
+class CartPageLocators(object):
+    CART_ITEMS = (By.CSS_SELECTOR, ".basket-items")
+    EMPTY_CART_MESSAGE_ELEMENT = (By.CSS_SELECTOR, "#content_inner p")
 
 
 class ProductPageLocators(object):
-    ADD_TO_BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
+    ADD_TO_CART_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert-success")
     PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main h1")
     PRODUCT_NAME_IN_ALERT = (By.CSS_SELECTOR, ".alertinner strong")
